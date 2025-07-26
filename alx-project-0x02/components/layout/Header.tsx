@@ -26,8 +26,12 @@ const Header = () => {
               About
             </Link>
           </li>
+          <li>
+          <Link href="/posts" className="hover:underline">
+            Posts
+          </Link>
+          </li>
         </ul>
-
         {/* Mobile Menu Toggle */}
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
