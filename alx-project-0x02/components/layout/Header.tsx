@@ -27,9 +27,14 @@ const Header = () => {
             </Link>
           </li>
           <li>
-          <Link href="/posts" className="hover:underline">
-            Posts
-          </Link>
+            <Link href="/posts" className={isActive("/posts") ? "text-blue-800 font-bold underline" : "hover:underline"}>
+              Posts
+            </Link>
+          </li>
+          <li>
+            <Link href="/users" className={isActive("/users") ? "text-blue-800 font-bold underline" : "hover:underline"}>
+              users
+            </Link>
           </li>
         </ul>
         {/* Mobile Menu Toggle */}
@@ -46,6 +51,12 @@ const Header = () => {
           </Link>
           <Link href="/about" className={isActive("/about") ? "block text-blue-800 font-bold underline" : "block hover:underline"}>
             About
+          </Link>
+          <Link href="/posts" className={isActive("/posts") ? "text-blue-800 font-bold underline" : "hover:underline"}>
+              Posts
+          </Link>
+          <Link href="/users" className={isActive("/users") ? "text-blue-800 font-bold underline" : "hover:underline"}>
+              Users
           </Link>
         </div>
       )}
