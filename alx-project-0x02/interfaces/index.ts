@@ -40,11 +40,18 @@ export interface ButtonProps {
 
 
 
-// interfaces/index.ts
+// interfaces/index.ts    POST CARD
+
+// export interface PostProps {
+//   userId: number;
+//   id?: number;
+//   title: string;
+//   content: string;
+// }
 
 export interface PostProps {
-  userId: number;
-  id?: number;
+  id: number;
   title: string;
   content: string;
+  userId: number;
 }
