@@ -35,7 +35,7 @@ const AboutPage = () => {
     <div className="p-8 space-y-4">
       <Header /> 
       <main className="p-6">
-
+        
       <h1 className="text-3xl font-bold mb-4">About Page</h1>
       <div className="flex gap-4 flex-wrap">
         <Button title="Small Button" size="small" shape="rounded-sm" />
